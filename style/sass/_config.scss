@@ -1,1 +1,44 @@
+/* Importações */
 @import "variables";
+
+/* Padrões */
+body {/* Remoção da Margem Padrão */
+    margin: 0px;
+}
+* {/* Regra Box-sizing Padrão */
+    box-sizing: border-box;
+}
+
+/* Declarações */
+body {
+    height: 100vh;
+    display: flex;
+    & * {
+        transition: width, height, 0.2s;
+    }
+    aside {
+        @include respWidth(1, 900px, 1366px);
+        @include respWidth(0.75, 1370px, 100vw);
+        @include respWidthToHeight(1, 700px, 900px, 1366px);
+        padding: $asidePadding;
+
+        nav {
+            height: calc(100vh - ($asidePadding * 2));
+            display: flex;
+            flex-direction: column;
+
+            & > div.asideSpaceButton {
+                height: 100%;
+            }
+        }
+    }
+    main {
+
+        header {
+
+        }
+        footer {
+
+        }
+    }
+}

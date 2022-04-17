@@ -1,1 +1,20 @@
+/* Importações */
 @import "variables";
+
+::selection {/* Seleção do Texto */
+    background: $bgPrimaryColor;
+    color: $txtSecondaryColor;
+}
+
+body {
+    background: $bgTertiaryColor;
+    color: $txtTertiaryColor;
+
+    aside {
+        nav {
+            & > div.asideSpaceButton {
+                background: $h-bgTertiaryColor;
+            }
+        }
+    }
+}
