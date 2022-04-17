@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "express": "^4.17.3",
+    "sass": "^1.50.0",
     "socket.io": "^4.4.1"
-  }
+  },
+  "scripts": {
+    "start": "chmod 777 scripts/* && scripts/init.sh",
+    "devStart": "chmod 777 scripts/* && scripts/devInit.sh"
+  },
+  "type": "module"
 }

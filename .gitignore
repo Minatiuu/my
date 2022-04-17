@@ -1,0 +1,8 @@
+node_modules/
+
+client/dev_js/
+client/js/
+modules/dev_js/
+modules/js/
+
+logs/

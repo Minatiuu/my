@@ -10,9 +10,8 @@ const io = new Server(server);
 const PORT = 8080;
 
 app.use(express.static('./'));
+server.listen(PORT);
 
 io.on('connection', socket => {
     console.log(`> Socket.io conectou-se na porta ${PORT}`);
 });
-
-server.listen(PORT);
