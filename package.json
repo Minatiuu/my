@@ -4,6 +4,11 @@
     "sass": "^1.50.0",
     "socket.io": "^4.4.1"
   },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-react": "^7.16.7"
+  },
   "scripts": {
     "start": "chmod 777 scripts/* && scripts/init.sh",
     "devStart": "chmod 777 scripts/* && scripts/devInit.sh"

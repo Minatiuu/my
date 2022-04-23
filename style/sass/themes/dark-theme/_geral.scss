@@ -11,10 +11,19 @@ body {
     color: $txtTertiaryColor;
 
     aside {
-        nav {
-            & > div.asideSpaceButton {
-                background: $h-bgTertiaryColor;
-            }
+        background: $bgTertiaryColor;
+    }
+    main {
+        header {
+            background: $bgTertiaryColor;
+            color: $txtSecondaryColor;
+        }
+        section:first-of-type {
+            background: $bgSecondaryColor;
+        }
+        footer {
+            background: $bgPrimaryColor;
+            color: $txtPrimaryColor;
         }
     }
 }

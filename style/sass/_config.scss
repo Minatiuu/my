@@ -13,13 +13,12 @@ body {/* Remoção da Margem Padrão */
 body {
     height: 100vh;
     display: flex;
+
     & * {
         transition: width, height, 0.2s;
     }
     aside {
-        @include respWidth(1, 900px, 1366px);
-        @include respWidth(0.75, 1370px, 100vw);
-        @include respWidthToHeight(1, 700px, 900px, 1366px);
+        width: calc($max-Width-normalPc / 24 * 0.8);
         padding: $asidePadding;
 
         nav {
@@ -29,13 +28,29 @@ body {
 
             & > div.asideSpaceButton {
                 height: 100%;
+
             }
         }
     }
     main {
+        width: 100%;
 
         header {
+            height: calc($max-Width-normalPc / 24 * 0.8);
+            width: 100%;
+            font: 'Ubuntu', sans-serif;
 
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        section:first-of-type {
+            border-radius: 0.4em 0em 0em;
+            height: calc($max-Width-normalPc / 24 * 99.2);
         }
         footer {
 
