@@ -29,7 +29,6 @@
         }
     }
 }
-
 /* Predefinições Media */
 @mixin allMediasWidth($mobile, $tablet, $normalPc, $fhdPc, $fourK) {
     @include respWidth($mobile, 0px, 720px);
@@ -44,4 +43,15 @@
     @include respWidthToHeight($normalPc, 1025px, 1366px);
     @include respWidthToHeight($fhdPc, 1367px, 1920px);
     @include respWidthToHeight($fourK, 1921px, 100vw);
+}
+
+/* Mixin's Gerais */
+
+@mixin navMenuFlex($base: $max-Width-normalPc) {
+    width: calc($base / 24 * 0.8);
+    height: calc($base / 24 * 0.8);
+    display: flex;
+    &:hover {
+        width: calc($base / 24 * (0.8 + 4));
+    }
 }

@@ -7,11 +7,17 @@
 }
 
 body {
-    background: $bgTertiaryColor;
     color: $txtTertiaryColor;
+    scrollbar-color: $bgPrimaryColor $bgQuaternaryColor;
 
     aside {
         background: $bgTertiaryColor;
+
+        nav {
+            & hr.asdHr {
+                border: 1px solid $bgRevertColor;
+            }
+        }
     }
     main {
         header {
@@ -19,11 +25,19 @@ body {
             color: $txtSecondaryColor;
         }
         section:first-of-type {
-            background: $bgSecondaryColor;
+            article {
+                background: $bgSecondaryColor;
+            }
+            div.radiusOne {
+                background: $bgTertiaryColor;
+            }
+            div.radiusTwo {
+                background: $bgQuaternaryColor;
+            }
         }
         footer {
-            background: $bgPrimaryColor;
-            color: $txtPrimaryColor;
+            background: $bgQuaternaryColor;
+            color: $txtSecondaryColor;
         }
     }
 }
