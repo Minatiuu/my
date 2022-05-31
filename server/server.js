@@ -1,17 +1,14 @@
 import fs from 'fs';
 import http from 'http';
-import { Server } from 'socket.io';
+import exec from 'child_process';
 import express from 'express';
+import readline from 'readline';
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
 
-const PORT = 8080;
+var PORT = 10000;
 
 app.use(express.static('./'));
 server.listen(PORT);
-
-io.on('connection', socket => {
-    console.log(`> Socket.io conectou-se na porta ${PORT}`);
-});
+console.log(`> Servidor iniciado na porta: ${PORT}`);

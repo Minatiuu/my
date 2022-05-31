@@ -15,7 +15,13 @@ body {
 
         nav {
             & hr.asdHr {
-                border: 1px solid $bgRevertColor;
+                border: 1px solid $h-bgRevertColor;
+            }
+            div.asdButtonSpace {
+                & > div.asdButtonMenu {
+                    background: $bgQuaternaryColor;
+                    box-shadow: 0px 0px 10px #0003;
+                }
             }
         }
     }
