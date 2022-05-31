@@ -27,6 +27,7 @@ body {
 body {
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 body aside {
   width: 45.5333333333px;
@@ -135,14 +136,24 @@ body main section:first-of-type article {
   position: absolute;
   z-index: 2;
 }
+body main section:first-of-type article > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section:first-of-type article > div > div:first-child {
+  font: 500 3em "Ubuntu", sans-serif;
+}
+body main section:first-of-type article > div > div:last-child {
+  font: 500 1.5em "Ubuntu", sans-serif;
+}
 body main section:first-of-type div.radiusOne {
   top: 0px;
 }
 body main section:first-of-type div.radiusTwo {
   bottom: 0px;
-}
-body main footer {
-  height: 100vh;
 }
 
 /* Theme */
