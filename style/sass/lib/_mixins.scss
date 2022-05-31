@@ -47,11 +47,3 @@
 
 /* Mixin's Gerais */
 
-@mixin navMenuFlex($base: $max-Width-normalPc) {
-    width: calc($base / 24 * 0.8);
-    height: calc($base / 24 * 0.8);
-    display: flex;
-    &:hover {
-        width: calc($base / 24 * (0.8 + 4));
-    }
-}
