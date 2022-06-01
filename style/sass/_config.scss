@@ -149,6 +149,7 @@ body {
                     }
                     & > div:first-child {
                         font: 500 3em "Ubuntu", sans-serif;
+                        margin: 0px 0px calc($max-Width-normalPc / 24 * 0.25) 0px;
                     }
                     & > div:last-child > span {
                         font: 400 1.25em "Ubuntu", sans-serif;

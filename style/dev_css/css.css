@@ -151,6 +151,7 @@ body main section:first-of-type article > div > div {
 }
 body main section:first-of-type article > div > div:first-child {
   font: 500 3em "Ubuntu", sans-serif;
+  margin: 0px 0px 14.2291666667px 0px;
 }
 body main section:first-of-type article > div > div:last-child > span {
   font: 400 1.25em "Ubuntu", sans-serif;
