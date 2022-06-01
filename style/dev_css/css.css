@@ -123,6 +123,7 @@ body main header div {
 body main section:first-of-type {
   position: relative;
   height: calc(100vh - 45.5333333333px);
+  overflow-x: hidden;
 }
 body main section:first-of-type > * {
   width: 100%;
@@ -143,11 +144,24 @@ body main section:first-of-type article > div {
   align-items: center;
   flex-direction: column;
 }
+body main section:first-of-type article > div > div {
+  text-align: center;
+  width: 100%;
+  padding: 0px 28.4583333333px;
+}
 body main section:first-of-type article > div > div:first-child {
   font: 500 3em "Ubuntu", sans-serif;
 }
-body main section:first-of-type article > div > div:last-child {
-  font: 500 1.5em "Ubuntu", sans-serif;
+body main section:first-of-type article > div > div:last-child > span {
+  font: 400 1.25em "Ubuntu", sans-serif;
+}
+@media screen and (max-width: 500px) {
+  body main section:first-of-type article > div > div:first-child {
+    font: 500 2.25em "Ubuntu", sans-serif;
+  }
+  body main section:first-of-type article > div > div:last-child > span {
+    font: 400 0.75em "Ubuntu", sans-serif;
+  }
 }
 body main section:first-of-type div.radiusOne {
   top: 0px;
