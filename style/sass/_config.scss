@@ -2,10 +2,12 @@
 @import "variables";
 
 /* Padrões */
-body {/* Remoção da Margem Padrão */
+body {
+    /* Remoção da Margem Padrão */
     margin: 0px;
 }
-* {/* Regras Padrões */
+* {
+    /* Regras Padrões */
     box-sizing: border-box;
     transition: width, height, 0.2s;
 }
@@ -14,6 +16,8 @@ body {/* Remoção da Margem Padrão */
 body {
     height: 100vh;
     display: flex;
+    overflow: hidden;
+
     aside {
         width: calc($max-Width-normalPc / 24 * 0.8);
 
@@ -74,7 +78,7 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font: 450 1.9em 'Ubuntu', sans-serif;
+                        font: 450 1.9em "Ubuntu", sans-serif;
                     }
                 }
                 & > div.asdButtonMenu {
@@ -104,7 +108,7 @@ body {
         header {
             height: calc($max-Width-normalPc / 24 * 0.8);
             width: 100%;
-            font: 700 1.25em 'Ubuntu', sans-serif;
+            font: 700 1.25em "Ubuntu", sans-serif;
 
             div {
                 display: flex;
@@ -117,6 +121,7 @@ body {
         section:first-of-type {
             position: relative;
             height: calc(100vh - ($max-Width-normalPc / 24 * 0.8));
+            overflow-x: hidden;
 
             & > * {
                 width: 100%;
@@ -129,6 +134,35 @@ body {
                 border-radius: 0.5em 0em 0em;
                 position: absolute;
                 z-index: 2;
+
+                & > div {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    & > div {
+                        text-align: center;
+                        width: 100%;
+                        padding: 0px calc($max-Width-normalPc / 24 * 0.5);
+                    }
+                    & > div:first-child {
+                        font: 500 3em "Ubuntu", sans-serif;
+                        margin: 0px 0px calc($max-Width-normalPc / 24 * 0.25) 0px;
+                    }
+                    & > div:last-child > span {
+                        font: 400 1.25em "Ubuntu", sans-serif;
+                    }
+                    @media screen and (max-width: 500px) {
+                        & > div:first-child {
+                            font: 500 2.25em "Ubuntu", sans-serif;
+                        }
+                        & > div:last-child > span {
+                            font: 400 0.75em "Ubuntu", sans-serif;
+                        }
+                    }
+                }
             }
             div.radiusOne {
                 top: 0px;
@@ -137,6 +171,5 @@ body {
                 bottom: 0px;
             }
         }
-        footer {height: 100vh}
     }
 }

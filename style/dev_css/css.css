@@ -23,6 +23,7 @@ body { /* Remoção da Margem Padrão */
 body {
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 body aside {
   width: 45.5333333333px;
@@ -118,6 +119,7 @@ body main header div {
 body main section:first-of-type {
   position: relative;
   height: calc(100vh - 45.5333333333px);
+  overflow-x: hidden;
 }
 body main section:first-of-type > * {
   width: 100%;
@@ -131,14 +133,38 @@ body main section:first-of-type article {
   position: absolute;
   z-index: 2;
 }
+body main section:first-of-type article > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section:first-of-type article > div > div {
+  text-align: center;
+  width: 100%;
+  padding: 0px 28.4583333333px;
+}
+body main section:first-of-type article > div > div:first-child {
+  font: 500 3em "Ubuntu", sans-serif;
+  margin: 0px 0px 14.2291666667px 0px;
+}
+body main section:first-of-type article > div > div:last-child > span {
+  font: 400 1.25em "Ubuntu", sans-serif;
+}
+@media screen and (max-width: 500px) {
+  body main section:first-of-type article > div > div:first-child {
+    font: 500 2.25em "Ubuntu", sans-serif;
+  }
+  body main section:first-of-type article > div > div:last-child > span {
+    font: 400 0.75em "Ubuntu", sans-serif;
+  }
+}
 body main section:first-of-type div.radiusOne {
   top: 0px;
 }
 body main section:first-of-type div.radiusTwo {
   bottom: 0px;
-}
-body main footer {
-  height: 100vh;
 }
 
 /* Theme */
