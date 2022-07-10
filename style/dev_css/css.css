@@ -1,24 +1,20 @@
 @charset "UTF-8";
-/* Lib */
-/* Widths Responsivos */
+/* Lib */ /* Widths Responsivos */
 /* Height Responsivos */
 /* Predefinições Media */
 /* Mixin's Gerais */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 /* Configs */
-/* Importações */
-/* Media Width's */
+/* Importações */ /* Media Width's */
 /* Media Height's */
 /* Padding's */
 /* Padrões */
-body {
-  /* Remoção da Margem Padrão */
+body { /* Remoção da Margem Padrão */
   margin: 0px;
 }
 
-* {
-  /* Regras Padrões */
+* { /* Regras Padrões */
   box-sizing: border-box;
   transition: width, height, 0.2s;
 }
@@ -146,11 +142,9 @@ body main footer {
 }
 
 /* Theme */
-/* Importações */
-/* Cores De Fundo */
+/* Importações */ /* Cores De Fundo */
 /* Cores de Texto */
-::selection {
-  /* Seleção do Texto */
+::selection { /* Seleção do Texto */
   background: #90f;
   color: #ccc;
 }
@@ -167,7 +161,7 @@ body aside nav hr.asdHr {
 }
 body aside nav div.asdButtonSpace > div.asdButtonMenu {
   background: #333;
-  box-shadow: 0px 0px 10px #0003;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 body main header {
   background: #222;
