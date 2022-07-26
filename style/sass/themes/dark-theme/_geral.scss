@@ -1,14 +1,20 @@
 /* Importações */
 @import "variables";
 
-::selection {/* Seleção do Texto */
+::selection {
+    /* Seleção do Texto */
     background: $bgPrimaryColor;
     color: $txtSecondaryColor;
+}
+* {
+    scrollbar-color: $bgTertiaryColor $bgQuaternaryColor;
+}
+*:hover {
+    scrollbar-color: $bgPrimaryColor $bgQuaternaryColor;
 }
 
 body {
     color: $txtTertiaryColor;
-    scrollbar-color: $bgPrimaryColor $bgQuaternaryColor;
 
     aside {
         background: $bgTertiaryColor;
@@ -33,6 +39,30 @@ body {
         section:first-of-type {
             article {
                 background: $bgSecondaryColor;
+                & > section.playlist {
+                    div.pl-header {
+                        div.pl-img {
+                            & > a > img {
+                                box-shadow: 0px 0px 10px #0005;
+                            }
+                        }
+                        div.pl-tags {
+                            & > a > div {
+                                background: $bgQuaternaryColor;
+                                box-shadow: 0px 0px 10px #0003;
+                                &:hover {
+                                    background: $h-bgQuaternaryColor;
+                                }
+                                &:active {
+                                    background: $a-bgQuaternaryColor;
+                                }
+                            }
+                        }
+                    }
+                    div.pl-info {
+                        background: $bgFifthColor;
+                    }
+                }
             }
             div.radiusOne {
                 background: $bgTertiaryColor;
