@@ -139,13 +139,12 @@ body main section:first-of-type {
 }
 body main section:first-of-type > * {
   width: 100%;
-  height: 50%;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }
 body main section:first-of-type article {
   height: 100%;
-  border-radius: 0.5em 0em 0em;
   position: absolute;
   z-index: 2;
 }
@@ -165,7 +164,8 @@ body main section:first-of-type article > section.playlist > div.space-pl-desc {
 }
 body main section:first-of-type article > section.playlist > div.space-pl-desc > div.pl-desc {
   /* Espaço da Descrição */
-  height: 97%;
+  height: calc(100% - 45.5333333333px);
+  border-radius: 0.5em 0em 0em 0.5em;
   overflow-y: auto;
 }
 body main section:first-of-type article > section.playlist > div.space-pl-desc > div.pl-desc > div.pl-header {
@@ -224,7 +224,7 @@ body main section:first-of-type article > section.playlist > div.space-pl-desc >
   height: 100%;
 }
 body main section:first-of-type article > section.playlist > div.space-pl-desc > div.pl-info {
-  height: 3%;
+  height: 45.5333333333px;
   position: static;
 }
 body main section:first-of-type article > section.playlist > div.space-pl-player {
@@ -268,9 +268,6 @@ body main section:first-of-type article > div.dev-alert > div:last-child > span 
 body main section:first-of-type div.radiusOne {
   top: 0px;
 }
-body main section:first-of-type div.radiusTwo {
-  bottom: 0px;
-}
 
 /* Theme */
 /* Importações */ /* Cores De Fundo */
@@ -306,30 +303,27 @@ body main header {
   background: #222;
   color: #ccc;
 }
-body main section:first-of-type article {
+body main section:first-of-type article > section.playlist > div > div.pl-desc {
   background: #2a2a2a;
 }
-body main section:first-of-type article > section.playlist div.pl-header div.pl-img > a > img {
+body main section:first-of-type article > section.playlist > div > div.pl-desc div.pl-header div.pl-img > a > img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3333333333);
 }
-body main section:first-of-type article > section.playlist div.pl-header div.pl-tags > a > div {
+body main section:first-of-type article > section.playlist > div > div.pl-desc div.pl-header div.pl-tags > a > div {
   background: #333;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-body main section:first-of-type article > section.playlist div.pl-header div.pl-tags > a > div:hover {
+body main section:first-of-type article > section.playlist > div > div.pl-desc div.pl-header div.pl-tags > a > div:hover {
   background: #303030;
 }
-body main section:first-of-type article > section.playlist div.pl-header div.pl-tags > a > div:active {
+body main section:first-of-type article > section.playlist > div > div.pl-desc div.pl-header div.pl-tags > a > div:active {
   background: #1c1c1c;
 }
 body main section:first-of-type article > section.playlist div.pl-info {
-  background: #111;
+  background: #222;
 }
 body main section:first-of-type div.radiusOne {
   background: #222;
-}
-body main section:first-of-type div.radiusTwo {
-  background: #333;
 }
 body main footer {
   background: #333;
