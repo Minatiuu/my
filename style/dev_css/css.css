@@ -269,6 +269,10 @@ body main section:first-of-type div.radiusOne {
   top: 0px;
 }
 
+body#init article {
+  border-radius: 0.5em 0em 0em;
+}
+
 /* Theme */
 /* Importações */ /* Cores De Fundo */
 /* Cores de Texto */
@@ -328,6 +332,10 @@ body main section:first-of-type div.radiusOne {
 body main footer {
   background: #333;
   color: #ccc;
+}
+
+body#init article {
+  background: #2a2a2a;
 }
 
 /*# sourceMappingURL=css.css.map */

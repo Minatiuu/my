@@ -76,3 +76,8 @@ body {
         }
     }
 }
+body#init {
+    article {
+        background: $bgSecondaryColor;
+    }
+}

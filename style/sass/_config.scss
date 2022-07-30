@@ -280,3 +280,8 @@ body {
         }
     }
 }
+body#init {
+    article {
+        border-radius: 0.5em 0em 0em;
+    }
+}
